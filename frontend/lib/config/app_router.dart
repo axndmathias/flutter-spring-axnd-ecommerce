@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:frontend/screens/cart/cart_screen.dart';
-import 'package:frontend/screens/catalog/catalog_screen.dart';
-import 'package:frontend/screens/home/home_screen.dart';
-import 'package:frontend/screens/product/product_screen.dart';
-import 'package:frontend/screens/wishlist/wishlist_screen.dart';
+
+import '../screens/screens.dart';
 
 class AppRouter {
   static Route onGenarateRoute(RouteSettings settings) {

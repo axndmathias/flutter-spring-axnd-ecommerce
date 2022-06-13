@@ -5,7 +5,7 @@ import '../../widgets/responsive_navbar.dart';
 
 class CatalogScreen extends StatelessWidget {
   const CatalogScreen({Key? key}) : super(key: key);
-  static const String routeName = '/';
+  static const String routeName = '/catalog';
 
   static Route route() {
     return MaterialPageRoute(

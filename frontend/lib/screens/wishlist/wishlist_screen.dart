@@ -5,7 +5,7 @@ import '../../widgets/responsive_navbar.dart';
 
 class WishlistScreen extends StatelessWidget {
   const WishlistScreen({Key? key}) : super(key: key);
-  static const String routeName = '/';
+  static const String routeName = '/wish';
 
   static Route route() {
     return MaterialPageRoute(
