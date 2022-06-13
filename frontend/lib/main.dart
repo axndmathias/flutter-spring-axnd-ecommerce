@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:frontend/widgets/widgets.dart';
+import 'package:frontend/config/app_router.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 
-import 'widgets/responsive_appbar.dart';
-import 'widgets/responsive_bottonappbar.dart';
+import 'screens/home/home_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -30,21 +29,8 @@ class MyApp extends StatelessWidget {
           const ResponsiveBreakpoint.resize(800, name: DESKTOP),
         ],
       ),
-      home: const HomeScreen(),
+      onGenerateRoute: AppRouter.onGenarateRoute,
+      initialRoute: HomeScreen.routeName,
     );
-  }
-}
-
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return const Scaffold(
-        appBar: PreferredSize(
-          child: ResponsiveAppBar(title: "axnd Ecommerce"),
-          preferredSize: Size(double.infinity, 52),
-        ),
-        bottomNavigationBar: ResponsiveNavAppBar());
   }
 }
