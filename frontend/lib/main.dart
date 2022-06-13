@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:frontend/widgets/widgets.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 
 import 'widgets/responsive_appbar.dart';
+import 'widgets/responsive_bottonappbar.dart';
 
 void main() {
   runApp(const MyApp());
@@ -39,11 +41,10 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      appBar: PreferredSize(
-        child: CustomAppBar(title: "axnd Ecommerce"),
-        preferredSize: Size(double.infinity, 52),
-      ),
-      bottomNavigationBar: BottomAppBar(),
-    );
+        appBar: PreferredSize(
+          child: ResponsiveAppBar(title: "axnd Ecommerce"),
+          preferredSize: Size(double.infinity, 52),
+        ),
+        bottomNavigationBar: ResponsiveNavAppBar());
   }
 }

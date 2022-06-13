@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:frontend/widgets/widgets.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 
-class CustomAppBar extends StatelessWidget {
+class ResponsiveAppBar extends StatelessWidget {
   final String title;
-  const CustomAppBar({
+  const ResponsiveAppBar({
     Key? key,
     required this.title,
   }) : super(key: key);
